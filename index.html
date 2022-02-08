@@ -41,7 +41,7 @@
                 <div class="text-1">Hello There, my name is</div>
                 <div class="text-2">Victor Ihemadu</div>
                 <div class="text-3">And I'm a <span>Software Engineer</span></div>
-                <a href="#">Hire me</a>
+                <a href="#contact">Hire me</a>
             </div>
         </div>
     </section>
@@ -56,8 +56,8 @@
                 </div>
                 <div class="column right">
                     <div class="text">A Full Stack  <span>Software Engineer</span></div>
-                    <p>I create solutions to problems using technology, having</p>
-                    <a href="#">Download CV</a>
+                    <p>I create solutions to problems using technology</p>
+                    <a href="images/Victor_Ihemadu_ Curriculum_Vitae.pdf">Download CV</a>
                 </div>
             </div>
         </div>
@@ -146,22 +146,25 @@
                         </div>
                     </div>
                 </div>
+
+
                 <div class="column right">
+                    <form id="form" onsubmit="sendMail()">
                     <div class="text">Message me</div>
                     <form action="#">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                                <input type="text" placeholder="Name" id="name" required>
                             </div>
                             <div class="field email">
                                 <input type="email" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" placeholder="Subject" id="subject" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                            <textarea cols="30" rows="10" placeholder="Message.." id="message" required></textarea>
                         </div>
                         <div class="button-area">
                             <button type="submit">Send message</button>
