@@ -57,9 +57,8 @@ $(document).ready(function(){
     });
 });
 
-
 function sendMail() {
-    const subject = document.getElementById('subject'.value);
+    const subject = document.getElementById('subject').value;
     const name = document.getElementById('name').value;
     const body = document.getElementById('message').value;
     window.open(`mailto:victorihemadu@gmail.com?subject=${subject}&body=${body}`);
